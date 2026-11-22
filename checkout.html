@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — NOIR COMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOIR <span>COMP</span></a>
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#katalog">Katalog</a></li>
+      <li><a href="keranjang.html" class="aktif">Keranjang</a></li>
+      <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+      <li><a href="login.html">Masuk</a></li>
+      <li><a href="register.html">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h1 class="judul-section">Checkout</h1>
+    <p class="sub-judul">Isi data pengiriman &amp; pilih metode pembayaran</p>
+
+    <form class="form-box lebar" action="checkout.html" method="post" enctype="multipart/form-data">
+
+      <h2 class="langkah">1. Alamat Pengiriman</h2>
+      <div class="grup">
+        <label for="nama">Nama Penerima</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+      </div>
+      <div class="grup">
+        <label for="wa">No. WhatsApp</label>
+        <input type="text" id="wa" name="wa" placeholder="0812-xxxx-xxxx" required>
+      </div>
+      <div class="grup">
+        <label for="alamat">Alamat Lengkap</label>
+        <textarea id="alamat" name="alamat" rows="3" placeholder="Jalan, nomor rumah, kelurahan, kota" required></textarea>
+      </div>
+
+      <h2 class="langkah">2. Metode Pembayaran</h2>
+      <div class="grup pilihan-bayar">
+        <label>
+          <input type="radio" name="bayar" value="transfer" checked>
+          <span>Transfer Bank (BCA / Mandiri)</span>
+        </label>
+        <label>
+          <input type="radio" name="bayar" value="ewallet">
+          <span>E-Wallet (GoPay / OVO / DANA)</span>
+        </label>
+        <label>
+          <input type="radio" name="bayar" value="qris">
+          <span>QRIS (semua aplikasi)</span>
+        </label>
+      </div>
+
+      <h2 class="langkah">3. Bukti Pembayaran</h2>
+      <div class="grup">
+        <label for="bukti">Upload Foto/Scan Bukti Transfer</label>
+        <input type="file" id="bukti" name="bukti" accept="image/*">
+        <p class="catatan">Format: JPG/PNG, maksimal 2MB. Admin memverifikasi
+        bukti ini sebelum pesanan diproses.</p>
+      </div>
+
+      <div class="kotak-total">
+        <span>Total yang dibayar</span>
+        <strong>Rp 8.324.000</strong>
+      </div>
+
+      <button class="btn btn-penuh" type="submit">Buat Pesanan</button>
+      <p class="tautan-bawah">Pesanan kamu akan muncul di
+        <a href="riwayat.html">Riwayat Pesanan</a></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="kolom">
+      <div>
+        <h3>NOIR COMP</h3>
+        <p>Toko komputer &amp; komponen<br>lengkap dengan harga bersahabat.</p>
+      </div>
+      <div>
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="index.html#katalog">Laptop</a></li>
+          <li><a href="index.html#katalog">Processor</a></li>
+          <li><a href="index.html#katalog">VGA</a></li>
+          <li><a href="index.html#katalog">RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Akun</h3>
+        <ul>
+          <li><a href="login.html">Masuk</a></li>
+          <li><a href="register.html">Daftar</a></li>
+          <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+          <li><a href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>Jl. Teknologi No. 11</li>
+          <li>WA: 0812-3456-7890</li>
+          <li>noircomp@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">© 2026 NOIR COMP — Proyek Ujian Kompetensi RPL Kelas 11</p>
+  </footer>
+
+</body>
+</html>

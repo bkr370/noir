@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang Belanja — NOIR COMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOIR <span>COMP</span></a>
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#katalog">Katalog</a></li>
+      <li><a href="keranjang.html" class="aktif">Keranjang</a></li>
+      <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+      <li><a href="login.html">Masuk</a></li>
+      <li><a href="register.html">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h1 class="judul-section">Keranjang Belanja</h1>
+    <p class="sub-judul">Periksa kembali barang sebelum checkout</p>
+
+    <form action="keranjang.html" method="post">
+      <table class="tabel-keranjang">
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Subtotal</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ASUS VivoBook 14</strong><br><span class="spek">Laptop</span></td>
+            <td>Rp 7.499.000</td>
+            <td><input type="number" name="jumlah[]" value="1" min="1" max="12"></td>
+            <td><strong>Rp 7.499.000</strong></td>
+            <td><button class="btn-hapus" type="submit" name="hapus" value="1">Hapus</button></td>
+          </tr>
+          <tr>
+            <td><strong>Mouse Logitech G102</strong><br><span class="spek">Aksesoris</span></td>
+            <td>Rp 175.000</td>
+            <td><input type="number" name="jumlah[]" value="2" min="1" max="25"></td>
+            <td><strong>Rp 350.000</strong></td>
+            <td><button class="btn-hapus" type="submit" name="hapus" value="2">Hapus</button></td>
+          </tr>
+          <tr>
+            <td><strong>SSD NVMe 512GB</strong><br><span class="spek">Storage</span></td>
+            <td>Rp 450.000</td>
+            <td><input type="number" name="jumlah[]" value="1" min="1" max="18"></td>
+            <td><strong>Rp 450.000</strong></td>
+            <td><button class="btn-hapus" type="submit" name="hapus" value="3">Hapus</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="rata-kanan">
+        <button class="btn btn-hitam" type="submit" name="update">Update Keranjang</button>
+      </div>
+    </form>
+
+    <div class="ringkasan">
+      <p><span>Subtotal (3 jenis barang)</span> <strong>Rp 8.299.000</strong></p>
+      <p><span>Ongkos kirim</span> <strong>Rp 25.000</strong></p>
+      <p class="total"><span>Total</span> <span>Rp 8.324.000</span></p>
+      <a class="btn" href="checkout.html">Checkout Sekarang →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="kolom">
+      <div>
+        <h3>NOIR COMP</h3>
+        <p>Toko komputer &amp; komponen<br>lengkap dengan harga bersahabat.</p>
+      </div>
+      <div>
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="index.html#katalog">Laptop</a></li>
+          <li><a href="index.html#katalog">Processor</a></li>
+          <li><a href="index.html#katalog">VGA</a></li>
+          <li><a href="index.html#katalog">RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Akun</h3>
+        <ul>
+          <li><a href="login.html">Masuk</a></li>
+          <li><a href="register.html">Daftar</a></li>
+          <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+          <li><a href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>Jl. Teknologi No. 11</li>
+          <li>WA: 0812-3456-7890</li>
+          <li>noircomp@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">© 2026 NOIR COMP — Proyek Ujian Kompetensi RPL Kelas 11</p>
+  </footer>
+
+</body>
+</html>

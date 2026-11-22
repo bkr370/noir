@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk — NOIR COMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOIR <span>COMP</span></a>
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#katalog">Katalog</a></li>
+      <li><a href="keranjang.html">Keranjang</a></li>
+      <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+      <li><a href="login.html" class="aktif">Masuk</a></li>
+      <li><a href="register.html">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+
+    <form class="form-box" action="login.html" method="post">
+      <h1>Masuk ke Akun</h1>
+      <p class="sub-judul">Selamat datang kembali di NOIR COMP</p>
+
+      <div class="grup">
+        <label for="username">Username / Email</label>
+        <input type="text" id="username" name="username" placeholder="ketik username kamu" required>
+      </div>
+
+      <div class="grup">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+
+      <button class="btn btn-penuh" type="submit">Masuk</button>
+
+      <p class="tautan-bawah">Belum punya akun?
+        <a href="register.html">Daftar sekarang</a></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="kolom">
+      <div>
+        <h3>NOIR COMP</h3>
+        <p>Toko komputer &amp; komponen<br>lengkap dengan harga bersahabat.</p>
+      </div>
+      <div>
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="index.html#katalog">Laptop</a></li>
+          <li><a href="index.html#katalog">Processor</a></li>
+          <li><a href="index.html#katalog">VGA</a></li>
+          <li><a href="index.html#katalog">RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Akun</h3>
+        <ul>
+          <li><a href="login.html">Masuk</a></li>
+          <li><a href="register.html">Daftar</a></li>
+          <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+          <li><a href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>Jl. Teknologi No. 11</li>
+          <li>WA: 0812-3456-7890</li>
+          <li>noircomp@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">© 2026 NOIR COMP — Proyek Ujian Kompetensi RPL Kelas 11</p>
+  </footer>
+
+</body>
+</html>

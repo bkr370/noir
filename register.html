@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Akun — NOIR COMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOIR <span>COMP</span></a>
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#katalog">Katalog</a></li>
+      <li><a href="keranjang.html">Keranjang</a></li>
+      <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+      <li><a href="login.html">Masuk</a></li>
+      <li><a href="register.html" class="aktif">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+
+    <form class="form-box" action="register.html" method="post">
+      <h1>Buat Akun Baru</h1>
+      <p class="sub-judul">Daftar gratis untuk mulai belanja</p>
+
+      <div class="grup">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+      </div>
+
+      <div class="grup">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+      </div>
+
+      <div class="grup">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="username untuk login" required>
+      </div>
+
+      <div class="grup">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="minimal 8 karakter" minlength="8" required>
+      </div>
+
+      <div class="grup">
+        <label for="ulang">Ulangi Password</label>
+        <input type="password" id="ulang" name="ulang" placeholder="ketik ulang password" minlength="8" required>
+      </div>
+
+      <button class="btn btn-penuh" type="submit">Daftar Sekarang</button>
+
+      <p class="tautan-bawah">Sudah punya akun?
+        <a href="login.html">Masuk di sini</a></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="kolom">
+      <div>
+        <h3>NOIR COMP</h3>
+        <p>Toko komputer &amp; komponen<br>lengkap dengan harga bersahabat.</p>
+      </div>
+      <div>
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="index.html#katalog">Laptop</a></li>
+          <li><a href="index.html#katalog">Processor</a></li>
+          <li><a href="index.html#katalog">VGA</a></li>
+          <li><a href="index.html#katalog">RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Akun</h3>
+        <ul>
+          <li><a href="login.html">Masuk</a></li>
+          <li><a href="register.html">Daftar</a></li>
+          <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+          <li><a href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>Jl. Teknologi No. 11</li>
+          <li>WA: 0812-3456-7890</li>
+          <li>noircomp@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">© 2026 NOIR COMP — Proyek Ujian Kompetensi RPL Kelas 11</p>
+  </footer>
+
+</body>
+</html>

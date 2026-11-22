@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR COMP — Toko Komputer Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOIR <span>COMP</span></a>
+    <ul class="menu">
+      <li><a href="index.html" class="aktif">Beranda</a></li>
+      <li><a href="index.html#katalog">Katalog</a></li>
+      <li><a href="keranjang.html">Keranjang</a></li>
+      <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+      <li><a href="login.html">Masuk</a></li>
+      <li><a href="register.html">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+
+    <div class="gelombang gelombang-1"><img src="../assets/wave-1.svg" alt=""></div>
+    <div class="gelombang gelombang-2"><img src="../assets/wave-2.svg" alt=""></div>
+    <div class="gelombang gelombang-3"><img src="../assets/wave-3.svg" alt=""></div>
+    <div class="gelombang gelombang-4"><img src="../assets/wave-4.svg" alt=""></div>
+
+    <span class="titik titik-1"></span>
+    <span class="titik titik-2"></span>
+    <span class="titik titik-3"></span>
+    <span class="titik titik-4"></span>
+    <span class="titik titik-5"></span>
+    <span class="titik titik-6"></span>
+    <span class="titik titik-7"></span>
+    <span class="titik titik-8"></span>
+
+    <span class="bulatan"></span>
+
+    <img class="perangkat" src="../assets/devices.png" alt="Berbagai perangkat komputer">
+
+    <img class="logo-kelinci" src="../assets/logo-bunny.png" alt="Logo NOIR COMP">
+    <h1>NOIR<br>COMP</h1>
+  </header>
+
+  <section class="section" id="katalog">
+    <h2 class="judul-section">Katalog Produk</h2>
+    <p class="sub-judul">Cari komputer &amp; komponen sesuai kebutuhanmu</p>
+
+    <form class="filter" action="index.html" method="get">
+      <input type="text" name="cari" placeholder="Cari nama produk...">
+      <select name="kategori">
+        <option value="">Semua Kategori</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Processor">Processor</option>
+        <option value="VGA">VGA</option>
+        <option value="RAM">RAM</option>
+        <option value="Storage">Storage</option>
+        <option value="Aksesoris">Aksesoris</option>
+      </select>
+      <button class="btn" type="submit">Cari</button>
+    </form>
+
+    <div class="daftar-produk">
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">💻</div>
+        <div class="isi-kartu">
+          <span class="kategori">Laptop</span>
+          <h3 class="nama-produk">ASUS VivoBook 14</h3>
+          <p class="spek">Core i5-1235U • RAM 8GB • SSD 512GB</p>
+          <p class="stok">Stok: 12</p>
+          <p class="harga">Rp 7.499.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">💻</div>
+        <div class="isi-kartu">
+          <span class="kategori">Laptop</span>
+          <h3 class="nama-produk">Lenovo IdeaPad Slim 3</h3>
+          <p class="spek">Ryzen 5 5625U • RAM 8GB • SSD 512GB</p>
+          <p class="stok">Stok: 7</p>
+          <p class="harga">Rp 6.899.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🧠</div>
+        <div class="isi-kartu">
+          <span class="kategori">Processor</span>
+          <h3 class="nama-produk">AMD Ryzen 5 5600G</h3>
+          <p class="spek">6 Core/12 Thread • Radeon Vega 7</p>
+          <p class="stok">Stok: 15</p>
+          <p class="harga">Rp 1.750.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🧠</div>
+        <div class="isi-kartu">
+          <span class="kategori">Processor</span>
+          <h3 class="nama-produk">Intel Core i5-12400F</h3>
+          <p class="spek">6 Core/12 Thread • Tanpa iGPU</p>
+          <p class="stok">Stok: 9</p>
+          <p class="harga">Rp 1.950.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🎮</div>
+        <div class="isi-kartu">
+          <span class="kategori">VGA</span>
+          <h3 class="nama-produk">GTX 1660 Super 6GB</h3>
+          <p class="spek">VRAM 6GB GDDR6 • 1080p gaming</p>
+          <p class="stok">Stok: 4</p>
+          <p class="harga">Rp 2.850.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🎮</div>
+        <div class="isi-kartu">
+          <span class="kategori">VGA</span>
+          <h3 class="nama-produk">AMD RX 6600 8GB</h3>
+          <p class="spek">VRAM 8GB GDDR6 • Hemat daya</p>
+          <p class="stok stok-habis">Stok: 0 (Habis)</p>
+          <p class="harga">Rp 3.200.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🧩</div>
+        <div class="isi-kartu">
+          <span class="kategori">RAM</span>
+          <h3 class="nama-produk">Kingston Fury 8GB DDR4</h3>
+          <p class="spek">3200MHz • Dual channel ready</p>
+          <p class="stok">Stok: 20</p>
+          <p class="harga">Rp 320.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">💾</div>
+        <div class="isi-kartu">
+          <span class="kategori">Storage</span>
+          <h3 class="nama-produk">SSD NVMe 512GB</h3>
+          <p class="spek">Read 3500MB/s • M.2 2280</p>
+          <p class="stok">Stok: 18</p>
+          <p class="harga">Rp 450.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="kartu-produk">
+        <div class="gambar-produk">🖱️</div>
+        <div class="isi-kartu">
+          <span class="kategori">Aksesoris</span>
+          <h3 class="nama-produk">Mouse Logitech G102</h3>
+          <p class="spek">8000 DPI • RGB lighting</p>
+          <p class="stok">Stok: 25</p>
+          <p class="harga">Rp 175.000</p>
+          <a class="btn" href="detail.html">Lihat Detail</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="kolom">
+      <div>
+        <h3>NOIR COMP</h3>
+        <p>Toko komputer &amp; komponen<br>lengkap dengan harga bersahabat.</p>
+      </div>
+      <div>
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="index.html#katalog">Laptop</a></li>
+          <li><a href="index.html#katalog">Processor</a></li>
+          <li><a href="index.html#katalog">VGA</a></li>
+          <li><a href="index.html#katalog">RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Akun</h3>
+        <ul>
+          <li><a href="login.html">Masuk</a></li>
+          <li><a href="register.html">Daftar</a></li>
+          <li><a href="riwayat.html">Riwayat Pesanan</a></li>
+          <li><a href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>Jl. Teknologi No. 11</li>
+          <li>WA: 0812-3456-7890</li>
+          <li>noircomp@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">© 2026 NOIR COMP — Proyek Ujian Kompetensi RPL Kelas 11</p>
+  </footer>
+
+</body>
+</html>
